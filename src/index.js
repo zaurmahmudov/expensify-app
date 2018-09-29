@@ -13,18 +13,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './playground/hoc';
 
 const store = Store();
-// console.log(store.getState())
 
-// addExpense -> Water bill
-// addExpense -> Gas bill
-// setTextFilter -> bill
-
-store.dispatch(addExpense({description: 'Water bill', amount: 1225, createdAt: 100}))
-store.dispatch(addExpense({description: 'Gas Bill', amount:115, createdAt: 2322}))
-store.dispatch(addExpense({description:'Rent',amount: 300000, createdAt:111}))
-// store.dispatch(setTextFilter('Water'));
-store.dispatch(sortByDate());
-// store.dispatch(sortByDate());
 
 
 setTimeout(()=>{
